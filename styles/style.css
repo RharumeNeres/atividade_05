@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --cor-primaria: #213448;
+    --cor-secundaria: #FFEDF3;
+    --cor-terciaria: #B2D8CE;
+    --cor-quadrado: #547792;
+    --fonte-titulo: 'Edu NSW ACT Foundation', cursive;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-rodape: 'Savate', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+.sobre__conteudo__titulo {
+    color: var(--cor-terciaria);
+    font-size: 4rem;
+    font-family: var(--fonte-titulo);
+}
+.sobre__conteudo__texto {
+    color: var(--cor-secundaria);
+    justify-content: center;
+    font-size: 2.55rem;
+    font-family: var(--fonte-texto);
+}
+.sobre {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px; 
+}
+.sobre__conteudo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.dorama__principal {
+    max-width: 55%;
+    height: auto;
+    border-radius: 8px;
+}
+.rodape {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-quadrado);
+    text-align: center;
+    padding: 24px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-rodape);
+}
+.rodape a {
+  text-decoration: none;
+  color: #FFC0CB;
+}
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.imagem__container {
+  width: 180px;
+  background-color: var(--cor-quadrado);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem__container img {
+  width: 100%;
+  display:block;
+}
+
+.imagem__container:hover {
+  transform: scale(1.05);
+}
+
+.imagem__descricao {
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+  color: var(--cor-secundaria);
+  background-color: var(--cor-quadrado);
+}
+
+#formulario-cadastro {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 45px;
+  border: 1px solid var(--cor-secundaria);
+  border-radius: 8px;
+  background-color: var(--cor-secundaria);
+}
+#formulario-cadastro legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--cor-secundaria);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #FFC0CB;
+  color: var(--cor-secundaria);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.campo > label { 
+  color: #333;
+}
+.opcoes label {
+  color: #333; 
+  font-weight: normal;
+  margin-right: 15px;
+}
+.lista {
+  color: var(--cor-secundaria);
+  font-size: 2.55rem;
+  margin: 2rem 0;
+  padding-left: 2.5rem;
+}
